@@ -1,684 +1,883 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <meta name="renderer" content="webkit">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="google-site-verification" content="">
-  <meta name="baidu-site-verification" content="">
-  <meta name="description" content="Archive / 归档 - FAITH,HOPE,LOVE">
-  <meta name="keywords" content="archive, 归档, null">
-  <meta name="author" content="Dale">
-  <meta name="layout-parts" content="[&#34;timeline&#34;]">
-  <link rel="shortcut icon" type="image/png" href="/asset/img/icon.small.png">
-  <link rel="apple-touch-icon" type="image/png" href="/asset/img/author.medium.png">
-  <link rel="manifest" href="/manifest.json">
-  <title>Archive / 归档 - Dale&#39;s blog</title>
+<head hexo-theme='https://volantis.js.org/#2.6.6'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
   
-  <script nomodule async src="/asset/js/nomodule.js?t=1592991920345"></script>
-  <link rel="stylesheet" href="/asset/css/style.css?t=1592991920345">
-  <script type="module" src="/asset/js/main.js?t=1592991920345"></script>
-<meta name="generator" content="Hexo 4.2.1"></head>
+    
+      <meta name="robots" content="noindex,follow">
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+    <title>Archive - Dale&#39;s blog</title>
+  
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+
+  <!-- import link -->
+  
+
+  
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
 
 <body>
-  <canvas class="m-evanyou-canvas"></canvas>
-  <div class="m-launch"></div>
-  <div class="m-spinner">
-    <div class="m-spinner-ring"></div>
-  </div>
-  <div class="m-progress">
-    <div class="m-progress-current"></div>
-  </div>
-  <!-- Outside App -->
-  <div class="m-app">
-    <div class="m-header">
-      <div class="p-xdrawer HIDE">
-  <i class="fas fa-bars"></i>
-</div>
-      <div class="p-xsearch HIDE">
-  <i class="fas fa-search"></i>
-  <i class="fas fa-times"></i>
-</div>
-      <div class="p-sitename HIDE">
-  <img class="p-sitename-icon" src="/asset/img/icon.medium.png">
-  <span class="p-sitename-text" data-lang="sitename"></span>
-</div>
-      <!-- END header -->
-    </div>
-    <div class="m-center">
-      <div class="m-drawer">
-        <div class="p-brand HIDE">
-  <div class="p-brand-head">
-    <img class="p-brand-avatar" src="/asset/img/author.large.png">
-  </div>
-  <div class="p-brand-detail">
-    <div class="p-brand-name" data-lang="brand.name"></div>
-    <div class="p-brand-slogan" data-lang="brand.slogan"></div>
-  </div>
-  <div class="p-brand-counts">
-    <span class="p-brand-posts" data-lang="brand.posts" data-lang-titled>
-      <i class="fas fa-archive fa-fw"></i>
-      <span class="p-brand-posts-count"></span>
-    </span><span class="p-brand-categories" data-lang="brand.categories" data-lang-titled>
-      <i class="fas fa-folder-open fa-fw"></i>
-      <span class="p-brand-categories-count"></span>
-    </span><span class="p-brand-tags" data-lang="brand.tags" data-lang-titled>
-      <i class="fas fa-tags fa-fw"></i>
-      <span class="p-brand-tags-count"></span>
-    </span>
-  </div>
-  <div class="p-brand-contacts">
+  
+  <div class="cover-wrapper">
     
-    <a href="//github.com/jinyaoMa" target="_blank" data-lang="brand.github" data-lang-titled><i class="fab fa-github fa-fw"></i></a>
+      <cover class='cover  half'>
+        <div class='cover-body'>
+  <div class='a'>
     
-    <a href="mailto:jinyao.ma@outlook.com" target="_blank" data-lang="brand.email" data-lang-titled><i class="fas fa-envelope fa-fw"></i></a>
     
-    <a href="tencent://Message/?uin=907881445" target="_blank" data-lang="brand.qq" data-lang-titled><i class="fab fa-qq fa-fw"></i></a>
+      <p class="title">Volantis</p>
+    
+    
+      <p class="subtitle">A Wonderful Theme for Hexo</p>
     
   </div>
-</div>
-        <div class="p-menus HIDE">
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-sitemap fa-fw"></i>
-      <span data-lang="menus.main.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="home" href="/">
-        <i class="fas fa-home fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.home"></span>
-      </a>
-      
-      <a data-menu-key="archive" href="/archives/">
-        <i class="fas fa-archive fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.archive"></span>
-      </a>
-      
-      <a data-menu-key="about" href="/about/">
-        <i class="fas fa-user fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.about"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-briefcase fa-fw"></i>
-      <span data-lang="menus.job.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="resume" href="/resume/">
-        <i class="fas fa-paper-plane fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.job.items.resume"></span>
-      </a>
-      
-      <a data-menu-key="letter" href="/letter/">
-        <i class="fas fa-file-contract fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.job.items.letter"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-ellipsis-h fa-fw"></i>
-      <span data-lang="menus.others.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="library" href="/library/">
-        <i class="fas fa-box fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.library"></span>
-      </a>
-      
-      <a data-menu-key="icons" href="/icons/">
-        <i class="fas fa-icons fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.icons"></span>
-      </a>
-      
-      <a data-menu-key="records" href="/records/">
-        <i class="fas fa-edit fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.records"></span>
-      </a>
-      
-      <a data-menu-key="gallery" href="/gallery/">
-        <i class="fas fa-images fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.gallery"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-</div>
-        <div class="p-skin HIDE">
-  <div class="p-skin-caption">
-    <i class="fas fa-tshirt fa-fw"></i> 
-    <span data-lang="skin.caption"></span>
-  </div>
-  <div class="p-skin-items">
+  <div class='b'>
     
-      <div data-skin-key="default" data-skin-color="#000000" data-lang="skin.items.default" data-lang-titled></div>
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
     
-      <div data-skin-key="gray" data-skin-color="#999999" data-lang="skin.items.gray" data-lang-titled></div>
-    
-      <div data-skin-key="colorful" data-skin-color="linear-gradient(to bottom right,#ff3333 ,#66cc66 , #0099cc)" data-lang="skin.items.colorful" data-lang-titled></div>
-    
-  </div>
-</div>
-        <div class="p-settings HIDE">
-  <div class="p-settings-caption">
-    <i class="fas fa-cog fa-fw"></i>
-    <span data-lang="settings.caption"></span>
-  </div>
-  <div class="p-settings-items">
-    
-    <div data-settings-key="langshift">
-      <i class="fas fa-globe-asia fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.langshift"></span>
-    </div>
-    
-    <div data-settings-key="night">
-      <i class="fas fa-adjust fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.night"></span>
-    </div>
-    
-    <div data-settings-key="transfigure">
-      <i class="fas fa-robot fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.transfigure"></span>
-    </div>
-    
-    <div data-settings-key="lyride">
-      <i class="fas fa-eye-slash fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.lyride"></span>
-    </div>
-    
-    <div data-settings-key="autoplay">
-      <i class="fas fa-play-circle fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.autoplay"></span>
-    </div>
-    
-  </div>
-</div>
-        <div class="m-drawer-mark"></div>
-        <!-- END drawer -->
-      </div>
-      <div class="m-frame">
-        <div class="m-main">
-          <div class="m-heaper">
-            <div class="p-xaside HIDE">
-  <i class="fas fa-chevron-right"></i>
-</div>
-            <div class="p-pather HIDE">
-  <div class="p-pather-home">
-    <i class="fas fa-home fa-fw"></i> 
-  </div>
-  <div class="p-pather-queue"></div>
-</div>
-            <!-- END heaper -->
-          </div>
-          <div class="p-translater HIDE">
-  <div class="p-translater-bar">
-    <span class="p-translater-bar-copy" data-lang="translater.copy"></span>
-    <span class="p-translater-bar-to" data-lang="translater.to"></span>
-    <span class="p-translater-bar-zh" data-lang="translater.zh"></span>
-    <span class="p-translater-bar-split">|</span>
-    <span class="p-translater-bar-en" data-lang="translater.en"></span>
-    <span class="p-translater-bar-split">|</span>
-    <span class="p-translater-bar-jp" data-lang="translater.jp"></span>
-  </div>
-  <div class="p-translater-result"></div>
-</div>
-          <div class="m-content">
-            <div class="p-hitokoto HIDE" data-api="//v1.hitokoto.cn" data-type="i">
-  <div class="p-hitokoto-caption">
-    <i class="fas fa-circle-notch fa-fw"></i>
-    <span data-lang="hitokoto"></span data-lang="hitokoto">
-  </div>
-  <div class="p-hitokoto-word">
-    <span class="p-hitokoto-content">感谢一言网(Hitokoto.cn)提供一句话服务</span>
-  </div>
-  <div class="p-hitokoto-from">
-    <span class="p-hitokoto-name">jinyaoMa</span>
-  </div>
-  <img src="/asset/img/qf3cu.huaji.png">
-</div>
-            <div class="p-recentposts HIDE">
-  <div class="p-recentposts-caption">
-    <i class="fas fa-clock fa-fw"></i>
-    <span data-lang="recentposts.caption"></span>
-  </div>
-  <div class="p-recentposts-items">
-    <div class="p-recentpost">
-      <div class="p-recentpost-cover">
-        <div><span></span></div>
-      </div>
-      <div class="p-recentpost-title">
-        <a class="p-recentpost-title-link"></a>
-      </div>
-      <div class="p-recentpost-meta">
-        <div class="p-recentpost-date">
-          <i class="fas fa-calendar-alt fa-fw"></i>
-          <span data-lang="recentposts.date" data-lang-titled></span>
-        </div>
-        <div class="p-recentpost-updated">
-          <i class="fas fa-calendar-check fa-fw"></i>
-          <span data-lang="recentposts.updated" data-lang-titled></span>
-        </div>
-        <div class="p-recentpost-categories">
-          <i class="fas fa-folder-open fa-fw"></i>
-          <span data-lang="recentposts.categories" data-lang-titled></span>
-        </div>
-      </div>
-      <div class="p-recentpost-excerpt markdown-body"></div>
+    <div class='menu navigation'>
+      <ul class='cover-list-h'>
+        
+          
+            <li>
+              <a class="nav home"
+                href="https://volantis.js.org/getting-started/"
+                
+                
+                id="https:volantisjsorggetting-started">
+                <i class='fas fa-book fa-fw'></i>文档
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://volantis.js.org/archives/"
+                
+                
+                id="https:volantisjsorgarchives">
+                <i class='fas fa-rss fa-fw'></i>博文
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://volantis.js.org/examples/"
+                
+                
+                id="https:volantisjsorgexamples">
+                <i class='fas fa-play-circle fa-fw'></i>示例
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://github.com/xaoxuu/hexo-theme-volantis/"
+                
+                  rel="external nofollow noopener noreferrer"
+                
+                
+                  target="_blank"
+                
+                id="https:githubcomxaoxuuhexo-theme-volantis">
+                <i class='fas fa-file-code fa-fw'></i>源码
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://volantis.js.org/contributors/"
+                
+                
+                id="https:volantisjsorgcontributors">
+                <i class='fas fa-handshake fa-fw'></i>鸣谢
+              </a>
+            </li>
+          
+        
+      </ul>
     </div>
   </div>
-  <div class="p-recentposts-more" data-lang="recentposts.more"></div>
-</div>
-            <div class="p-timeline HIDE">
-  <div class="p-timeline-caption">
-    <i class="fas fa-history fa-fw"></i>
-    <span data-lang="timeline.caption"></span>
-  </div>
-  <div class="p-timeline-items">
-    <div class="p-timeline-item">
-      <div class="p-timeline-head">
-        <div class="p-timeline-year"></div>
-        <div class="p-timeline-count" data-lang="timeline.count" data-lang-params></div>
-      </div>
-      <div class="p-timeline-row">
-        <div class="p-timeline-date"></div>
-        <div class="p-timeline-content">
-          <div class="p-timeline-title"></div>
-          <div class="p-timeline-excerpt markdown-body"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-            <div class="p-post HIDE">
-  <div class="p-post-caption">
-    <i class="fas fa-file fa-fw"></i>
-    <span data-lang="post.caption"></span>
-  </div>
-  <div class="p-post-main">
-    <div class="p-post-title"></div>
-    <div class="p-post-meta">
-      <div class="p-post-date" data-lang="post.date" data-lang-titled>
-        <i class="fas fa-calendar-alt fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-updated" data-lang="post.updated" data-lang-titled>
-        <i class="fas fa-calendar-check fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-categories" data-lang="post.categories" data-lang-titled>
-        <i class="fas fa-folder-open fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-wordcount" data-lang="post.wordcount" data-lang-titled>
-        <i class="fas fa-file-word fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-min2read" data-lang="post.min2readt" data-lang-titled>
-        <i class="fas fa-stopwatch fa-fw"></i>
-        <span data-lang="post.min2read" data-lang-params></span>
-      </div>
-      <div class="p-post-viewcount" data-lang="post.viewcount" data-lang-titled>
-        <i class="fas fa-eye fa-fw"></i>
-        <span class="leancloud_visitors" data-flag-title><i class="leancloud-visitors-count">∞</i></span>
-      </div>
-    </div>
-    <div class="p-post-content markdown-body"></div>
-    <div class="p-post-ending">
-      <span data-lang="post.ending.head"></span>
-      <i class="far fa-dot-circle fa-fw"></i>
-      <span data-lang="post.ending.tail"></span>
-    </div>
-    <div class="p-post-friend">
-      <div class="p-post-friend-text" data-lang="post.friend.text"></div>
-      <div class="p-post-friend-button" data-lang="post.friend.button"></div>
-      <div class="p-post-friend-qrcode">
-        <div class="p-post-friend-qrcode-qq">
-          <img src="/asset/img/qq.png">
-          <div data-lang="post.friend.qq"></div>
-        </div>
-        <div class="p-post-friend-qrcode-wechat">
-          <img src="/asset/img/wechat.png">
-          <div data-lang="post.friend.wechat"></div>
-        </div>
-      </div>
-    </div>
-    <div class="p-post-share"></div>
-    <div class="p-post-license">
-      <div class="p-post-license-author">
-        <span class="label" data-lang="post.license.labels.author"></span>
-        <span class="p-post-license-author-text">Dale</span>
-      </div>
-      <div class="p-post-license-link">
-        <span class="label" data-lang="post.license.labels.link"></span>
-        <span class="p-post-license-link-text"></span>
-      </div>
-      <div class="p-post-license-notice">
-        <span class="label" data-lang="post.license.labels.notice"></span>
-        <span class="p-post-license-notice-text" data-lang="post.license.text" data-lang-params="%3Ca%20target=%22_blank%22%20href=%22//creativecommons.org/licenses/by-nc-sa/4.0/%22%20title=%22BY-NC-SA%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class=%22fab%20fa-creative-commons%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBY-NC-SA%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/a%3E" data-lang-encoded></span>
-      </div>
-    </div>
-    <div class="p-post-tags"></div>
-    <div class="p-post-navigator">
-      <div class="p-post-navigator-prev"></div>
-      <div class="p-post-navigator-next"></div>
-      <div class="p-post-navigator-clear"></div>
-    </div>
-  </div>
-</div>
-            <div class="p-page HIDE">
-  <div class="p-page-caption">
-    <i class="fas fa-file-alt fa-fw"></i>
-    <span data-lang="page.caption"></span>
-  </div>
-  <div class="p-page-title"></div>
-  <div class="p-page-main markdown-body"></div>
-</div>
-            <div class="p-codelib HIDE">
-  <div class="p-codelib-caption">
-    <i class="fab fa-readme fa-fw"></i>
-    <span data-lang="codelib.captions.log"></span>
-  </div>
-  <div class="p-codelib-readme">
-    <div class="p-codelib-more">
-      <span class="codelib-more" data-lang="codelib.more"></span>
-      <span class="codelib-less" data-lang="codelib.less"></span>
-    </div>
-  </div>
-  <div class="p-codelib-caption">
-    <i class="fas fa-layer-group fa-fw"></i>
-    <span data-lang="codelib.captions.stack"></span>
-  </div>
-  <ul class="p-codelib-list"></ul>
-</div>
-            <div class="p-records HIDE">
-  <div class="p-record">
-    <div class="p-record-caption">
-      <i class="fas fa-save fa-fw"></i>
-      <span data-lang="records.caption"></span>_<span class="p-record-date">N/A</span>
-    </div>
-    <div class="p-record-frame">
-      <div class="p-record-main">
-        <div class="p-record-cover">
-          <img src="/asset/img/qf3cu.temp.png">
-        </div>
-        <div class="p-record-content">
-          <div class="p-record-title">
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-type">
-            <span class="p-record-label" data-lang="records.labels.type"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-source">
-            <span class="p-record-label" data-lang="records.labels.source"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-author">
-            <span class="p-record-label" data-lang="records.labels.author"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-progress">
-            <span class="p-record-label" data-lang="records.labels.progress"></span>
-            <div class="p-record-inner">
-              <div class="p-record-progress-current">N/A</div>
-            </div>
-          </div>
-          <div class="p-record-summary">
-            <span class="p-record-label" data-lang="records.labels.summary"></span>
-            <div class="p-record-inner">N/A</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-            <div class="p-gallery HIDE">
-  <div class="p-gallery-item">
-    <div class="p-gallery-caption">
-      <i class="fas fa-image fa-fw"></i>
-      <span></span>
-    </div>
-    <div class="p-gallery-image">
-      <a target="_blank"><img></a>
-    </div>
-  </div>
-</div>
-            <div class="p-iconlib HIDE">
-  <div class="p-iconlib-caption">
-    <i class="fab fa-readme fa-fw"></i>
-    <span data-lang="iconlib.captions.log"></span>
-  </div>
-  <div class="p-iconlib-readme">
-    <div class="p-iconlib-more">
-      <span class="iconlib-more" data-lang="iconlib.more"></span>
-      <span class="iconlib-less" data-lang="iconlib.less"></span>
-    </div>
-  </div>
-  <div class="p-iconlib-caption">
-    <i class="fas fa-grip-horizontal fa-fw"></i>
-    <span data-lang="iconlib.captions.stack"></span>
-  </div>
-  <iframe class="p-iconlib-iframe" sandbox="allow-same-origin" frameBorder="0" marginheight="0px"
-    marginwidth="0px"></iframe>
-</div>
-            <!-- END content -->
-          </div>
-          <div class="p-comment HIDE">
-  <div class="p-comment-caption">
-    <i class="fas fa-comments fa-fw"></i>
-    <span data-lang="comment.caption"></span>
-  </div>
-  <div class="p-comment-valine"></div>
-</div>
-          <div class="p-empty HIDE">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-</div>
-          <!-- END main -->
-        </div>
-        <div class="m-aside">
-          <div class="p-panels HIDE">
-  
-    <div class="p-panel" data-key="categories">
-      <div class="p-panel-caption">
-        <i class="fas fa-folder-open fa-fw"></i>
-        <span data-lang="panels.categories"></span>
-      </div>
-      <div class="p-panel-items"></div>
-    </div>
-  
-    <div class="p-panel" data-key="tags">
-      <div class="p-panel-caption">
-        <i class="fas fa-tags fa-fw"></i>
-        <span data-lang="panels.tags"></span>
-      </div>
-      <div class="p-panel-items"></div>
-    </div>
-  
 </div>
 
-          <div class="p-audioplayer HIDE">
-  <div class="p-audioplayer-caption">
-    <i class="fas fa-music fa-fw"></i>
-    <span data-lang="audioplayer" data-lang-encoded
-      data-lang-params="%3Ci%20class=%22fas%20fa-plus%20fa-fw%22%3E%3C/i%3E"></span>
-  </div>
-  <div class="p-audioplayer-player">
-    <meting-js server="netease" type="playlist" id="4989572738"
-      theme="#ff3300" list-max-height="297px"></meting-js>
-  </div>
+      </cover>
+    
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
 </div>
-          <div class="p-toc HIDE">
-  <div class="p-toc-caption">
-    <i class="fas fa-bookmark fa-fw"></i>
-    <span data-lang="toc.caption"></span>
-  </div>
-  <div class="p-toc-main">
-    <div class="p-toc-message" data-lang="toc.noheadings"></div>
-    <div class="p-toc-list"></div>
-  </div>
-</div>
-          <div class="m-aside-mark"></div>
-          <!-- END aside -->
-        </div>
+<header class="l_header shadow blur">
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h'>
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+          
+          
+            VOLANTIS <b><sup style='color:#3AA757'>2.6.6</sup></b>
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
       </div>
+
+			<ul class='switcher nav-list-h'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      
+
+<div class='l_main'>
+	
+	  <article id="archive-page" class="post article white-box reveal shadow">
+	    <section class="archive">
+	      
+	          <div class="archive-item archive-year mark">
+	            <h2>2020</h2>
+	          </div>
+	      
+	          <div class="archive-item archive-post mark">
+	            <a href="/2020/06/24/hello-world/">
+	              <time>06-24</time>
+	              <span class="title">
+	                
+	                  Hello World
+	                
+	                
+									
+									
+	              </span>
+	            </a>
+	          </div>
+	      
+	    </section>
+	  </article>
+	
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Dale's blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+  
+
+  
+    
+    
+
+  
+
+  
+
+
+</aside>
+
+
+  
+  <footer class="clearfix">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='3175833810'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="mailto:me@xaoxuu.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://github.com/xaoxuu"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=63035382"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+        </div>
+      
+    
+      
+        <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+      
+    
+      
+        Use
+        <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
+        as theme, total visits
+          <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+          times
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="https://xaoxuu.com" target="_blank" rel="noopener">Copyright © 2017-2020 Mr. X</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+<script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
+      <script>setLoadingBarProgress(60);</script>
     </div>
-    <div class="m-footer">
-      <div class="p-footer HIDE">
-  <div class="p-footer-copyright">
-    <span class="p-footer-copyright-year">&copy; 2019 - 2020</span>
-    <span class="p-footer-copyright-author">Dale</span>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
   </div>
-  <div class="p-footer-powered" data-lang="footer.powered" data-lang-params="%3Ca%20target=%22_blank%22%20href=%22//hexo.io%22%3EHexo%204.2.1%3C/a%3E" data-lang-encoded></div>
-  <div class="p-footer-theme" data-lang="footer.theme" data-lang-params="%5B%22%253Ca%2520target=%2522_blank%2522%2520href=%2522//github.com/jinyaoMa/hexo-theme-mustom%2522%253EMustom%253C/a%253E%22,%22%253Ca%2520target=%2522_blank%2522%2520href=%2522/%2522%253EjinyaoMa%253C/a%2520target=%2522_blank%2522%253E%22%5D" data-lang-encoded></div>
-  <div class="p-footer-count">
-    <i class="fas fa-eye fa-fw"></i>
-    <span class="p-footer-pv">∞</span>
-    <i class="fas fa-user-tie fa-fw"></i>
-    <span class="p-footer-uv">∞</span>
-    <i class="fas fa-file-word fa-fw"></i>
-    <span class="p-footer-wd">∞</span>
-  </div>
-  <div class="p-footer-license">
-    <a href="//creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" data-lang="footer.license" data-lang-titled>
-      <img src="/asset/img/by-nc-sa.svg">
-    </a>
-  </div>
-</div>
-      <!-- END footer -->
-    </div>
-    <div class="p-xcanvas HIDE">
-  <i class="fas fa-video"></i>
-  <i class="fas fa-video-slash"></i>
-</div>
-    <div class="p-goingto HIDE">
-  <div class="p-goingto-top">
-    <i class="fas fa-arrow-up"></i> 
-  </div>
-  <div class="p-goingto-bottom">
-    <i class="fas fa-arrow-down"></i> 
-  </div>
-</div>
-    <div class="p-extension HIDE">
-  <div class="p-extension-frame">
-    <div class="p-extension-scroll">
-      <div class="p-extension-content"></div>
-    </div>
-  </div>
-  <div class="p-extension-button">
-    <img class="p-extension-front" src="/asset/img/start.png">
-    <img class="p-extension-back" src="/asset/img/start.reverse.png">
-  </div>
-</div>
-    <div class="p-adframe HIDE close">
-  <div class="p-adframe-qrcode"><i class="fas fa-qrcode"></i></div>
-  <div class="p-adframe-close"><i class="fas fa-times-circle"></i></div>
-  <div class="p-adframe-content">
-    <img src="/ad.png">
-  </div>
-</div>
-    <div class="p-search HIDE">
-  <div class="p-search-dialog">
-    <div class="p-search-dialog-bar">
-      <div class="p-search-dialog-button" data-lang="search.button"></div>
-      <input class="p-search-dialog-input" type="text" data-lang="search.placeholder" data-lang-placeholdered>
-    </div>
-    <div class="p-search-dialog-result"></div>
-  </div>
-</div>
-    <div class="p-notification HIDE">
-  <div class="p-notification-message">
-    <i class="fas fa-info-circle"></i>
-    <span class="p-notification-text"></span>
-  </div>
-</div>
-    <!-- END app -->
-  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      ScrollReveal().reveal('.l_main .reveal', {
+        distance: '8px',
+        duration: '800',
+        interval: '100',
+        scale: '1'
+      });
+    });
+  </script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('.cover') {
+          $('.cover').backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/search.js"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
+
+
+
+<!-- 复制 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-check-circle');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('fa-check-circle');
+          $icon.addClass('fa-copy');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-times-circle');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('fa-times-circle');
+          $icon.addClass('fa-copy');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  function pjax_fancybox() {
+    $(".article-entry").find("img").not('.inline').not('a img').each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 标准 markdown 描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".article-entry").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  $(function () {
+    pjax_fancybox();
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
 </body>
-
 </html>
